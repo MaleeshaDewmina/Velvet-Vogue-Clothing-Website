@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Filters Section */
+.filter-container {
+    background: white;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+}
+
+.filter-container h3 {
+    font-size: 22px;
+    color: #ff416c;
+    margin-bottom: 15px;
+}
+
+.filter-container label {
+    display: inline-block;
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.filter-container label:hover {
+    background: #ff416c;
+    color: white;
+}
+
+.clear-filters-btn {
+    background: #ff4b2b;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clear-filters-btn:hover {
+    background: #d63333;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product Card */
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product .btn {
+    background: #ff416c;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product .btn:hover {
+    background: #ff4b2b;
+}
+
+/* ✅ FIXED HERO (BANNER) SECTION */
+.hero {
+    width: 100%;
+    height: 00px; /* Adjusted for better visibility */
+    background-image: url('../images/hero-banner.jpg');
+    background-size: contain; /* Prevents excessive zooming */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd; /* Fallback color */
+}
+
+/* ✅ Fix Hero Image inside (if used as <img>) */
+.hero img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ✅ CATEGORY SECTION FIX */
+.category-container {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+.category-container h2 {
+    font-size: 28px;
+    justify-content: center;
+    color: #ff416c;
+    margin-bottom: 20px;
+}
+
+/* ✅ FLEXBOX FIX FOR CENTERED ALIGNMENT */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ✅ FIXED CATEGORY CARDS */
+.category-card {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    width: 180px; /* Adjust width */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ FIX CATEGORY CARD IMAGES */
+.category-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover; /* Ensures images are not stretched */
+    border-radius: 8px;
+}
+
+/* ✅ FIX CATEGORY TEXT */
+.category-card p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ✅ HOVER EFFECT */
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .hero {
+        height: 350px;
+        background-size: cover;
+    }
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+

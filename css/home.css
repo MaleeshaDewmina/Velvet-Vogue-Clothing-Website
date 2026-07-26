@@ -1,0 +1,101 @@
+/* Category Section */
+/* ✅ Prevent Navbar from Covering Content */
+body {
+    padding-top: 80px; /* Adjust this based on your navbar height */
+}
+
+/* ✅ If needed, add extra margin to the first section */
+.product-container, .category-container {
+    margin-top: 20px;
+}
+
+
+.category-container {
+    text-align: center;
+    padding: 40px 20px;
+    background: blue, skyblue;
+}
+
+.category-container h2 {
+    font-size: 28px;
+    color: #ff416c;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.category-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+/* Product Grid */
+.product-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #ff416c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-btn:hover {
+    background: #ff4b2b;
+}

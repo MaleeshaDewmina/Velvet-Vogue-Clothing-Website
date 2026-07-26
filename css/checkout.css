@@ -1,0 +1,195 @@
+/* ✅ GENERAL STYLING */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, navy, skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ✅ CHECKOUT CONTAINER */
+.checkout-container {
+    width: 600px;
+    padding: 35px;
+    background: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    text-align: center;
+    border-top: 8px solid #ff416c;
+    border-bottom: 8px solid #ff4b2b;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ✅ HEADINGS */
+h1 {
+    color: #ff416c;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* ✅ ORDER SUMMARY TABLE */
+.order-summary {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.order-summary th, .order-summary td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+.order-summary th {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    font-weight: bold;
+}
+
+/* ✅ FIXED PRODUCT IMAGE SIZE */
+.checkout-product-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ✅ PRODUCT INFO */
+.product-name { font-weight: bold; font-size: 18px; color: #333; }
+.product-price { font-size: 16px; color: #ff416c; font-weight: bold; }
+.product-qty { font-size: 16px; font-weight: bold; color: #007bff; }
+
+/* ✅ FORM FIELDS */
+.checkout-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff416c;
+}
+
+/* ✅ PAYMENT OPTIONS */
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.payment-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+.payment-label img {
+    width: 30px;
+    height: 30px;
+}
+
+.payment-label:hover {
+    border-color: #ff416c;
+}
+
+/* ✅ BUTTON */
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+/* ✅ Preloader Styling */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white; /* Background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+/* ✅ Logo Styling */
+.preloader-logo {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* ✅ Bouncing Dots Animation */
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    background-color: #ff416c; /* Dot color */
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+.dots span:nth-child(1) { animation-delay: 0s; }
+.dots span:nth-child(2) { animation-delay: 0.2s; }
+.dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+    0%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+}
+
+/* ✅ Hide Preloader */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
